@@ -14,4 +14,5 @@ laravelでメールフォームを作る<br>
 
 ## 23日
 
-mailableクラスの作成
+mailableクラス、viewの作成<br>
+404エラー、500エラーの解消
