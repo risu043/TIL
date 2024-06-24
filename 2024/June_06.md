@@ -16,3 +16,8 @@ laravelでメールフォームを作る<br>
 
 mailableクラス、viewの作成<br>
 404エラー、500エラーの解消
+
+## 24日
+
+送信成功！<br>
+requestでかけたvaridationをcontrollerにimportすると、inetiaがエラーをセッション管理してくれる
