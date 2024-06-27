@@ -5,7 +5,7 @@ curl -s https://laravel.build/pokemon | bash
 cd pokemon
 
 Sail コマンドを使えるようにする<br>
-code ~/.bashrc
+code ~/.bashrc<br>
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 
 変更を反映<br>
