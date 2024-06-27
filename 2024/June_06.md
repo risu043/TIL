@@ -30,3 +30,8 @@ requestでかけたvaridationをcontrollerにimportすると、inetiaがエラ�
 
 カレンダーを作りたい<br>
 FullCallendarをインストール
+
+## 27日
+
+プラグイン導入の仕方<br>
+ターミナルからインストール、ファイルでimport、Calendarコンポーネントのpropsに追加
