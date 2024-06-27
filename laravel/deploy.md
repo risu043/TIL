@@ -20,7 +20,7 @@ ssh -l [サーバー ID] -i [サーバー ID].key [サーバー ID].xsrv.jp -p 1
 ### PHP
 
 サーバーパネルで PHP のバージョンをプロジェクトと同じものに設定する<br>
-ターミナルで使用する PHP のバージョンもロジェクトと同じものに設定する<br>
+ターミナルで使用する PHP のバージョンもプロジェクトと同じものに設定する<br>
 mkdir $HOME/bin<br>
 ln -s /usr/bin/php8.2 $HOME/bin/php
 
