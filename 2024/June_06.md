@@ -35,3 +35,8 @@ FullCallendarをインストール
 
 プラグイン導入の仕方<br>
 ターミナルからインストール、ファイルでimport、Calendarコンポーネントのpropsに追加
+
+## 28日
+
+ドラッグ式のカレンダーできた<br>
+jsからtsに変更。eventの型は@fullcalendar/coreよりimportする
