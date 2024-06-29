@@ -38,5 +38,9 @@ FullCallendarをインストール
 
 ## 28日
 
-ドラッグ式のカレンダーできた<br>
+ドラッグできるカレンダーできた<br>
 jsからtsに変更。eventの型は@fullcalendar/coreよりimportする
+
+## 29日
+
+クリックもドラッグもできるカレンダーできた
