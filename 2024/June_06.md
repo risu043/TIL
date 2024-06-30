@@ -43,4 +43,10 @@ jsからtsに変更。eventの型は@fullcalendar/coreよりimportする
 
 ## 29日
 
-クリックもドラッグもできるカレンダーできた
+クリックもドラッグもできるカレンダーできた<br>
+モダールはreact-modalを使用<br>
+型定義ファイルreact-modal.d.tsを別途用意する
+
+## 30日
+
+昨日のカレンダーをlaravelとつなげる
