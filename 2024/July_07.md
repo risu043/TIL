@@ -13,3 +13,9 @@ postしてもデータベースに登録されない沼
 
 eventの登録、DBから取得したeventのレンダリングまでできた<br>
 postのステータスコードが200でも、controllerのバリデーションにひっかかるとDBに登録されない
+
+## 5日
+
+DBからeventを削除できた<br>
+FullCalendarのeventオブジェクトのidはstring、DBからfetchしたidはnumber<br>
+fetch後はtoStringメソッドでstringにそろえる
