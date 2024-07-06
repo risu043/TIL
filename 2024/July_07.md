@@ -19,3 +19,9 @@ postのステータスコードが200でも、controllerのバリデーション
 DBからeventを削除できた<br>
 FullCalendarのeventオブジェクトのidはstring、DBからfetchしたidはnumber<br>
 fetch後はtoStringメソッドでstringにそろえる
+
+## 6日
+
+PATCHでデータを送ろうとすると405エラーがでる<br>
+HTMLがGETとPOSTしかサポートしていないため<br>
+method="POST"、bodyに_method="patch"を加え送信する
