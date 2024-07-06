@@ -34,6 +34,9 @@ protected $casts = [
 
 ## 7日
 
+allDay:falseの場合、startとendはUTCで送信される(日本時間と9時間ずれる)<br>
+controllerでvalidationした後、Carbon(日付操作ライブラリ)で日本時間に戻してからDB登録する
+
 eventInputのうちendはnullableである(時間指定のイベントで、かつ期間が１時間の場合)<br>
 作成したイベントの期間を変更したい場合は、Fullcallendarのpropsにてdroppableの他にeventResizableFromStartの定義が必要<br>
 handleEventDrop関数に加えhandleEventResize関数を用意する(ルーティングは共用で可)
