@@ -25,3 +25,9 @@ fetch後はtoStringメソッドでstringにそろえる
 PATCHでデータを送ろうとすると405エラーがでる<br>
 HTMLがGETとPOSTしかサポートしていないため<br>
 method="POST"、bodyに_method="patch"を加え送信する
+
+laravelはbooleanを整数に変換してDBに保存する(true:1,false:0)<br>
+Modelに下記のようにメソッドを追加することで、もとの形式でfetchできる<br>
+protected $casts = [
+        'allDay' => 'boolean',
+    ];
