@@ -40,3 +40,8 @@ controllerでvalidationした後、Carbon(日付操作ライブラリ)で日本�
 eventInputのうちendはnullableである(時間指定のイベントで、かつ期間が１時間の場合)<br>
 作成したイベントの期間を変更したい場合は、Fullcallendarのpropsにてdroppableの他にeventResizableFromStartの定義が必要<br>
 handleEventDrop関数に加えhandleEventResize関数を用意する(ルーティングは共用で可)
+
+## 8日
+
+API通信のコードを関数にして別ファイルにまとめた<br>
+xserverにデプロイした
