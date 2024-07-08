@@ -43,5 +43,4 @@ handleEventDrop関数に加えhandleEventResize関数を用意する(ルーテ�
 
 ## 8日
 
-API通信のコードを関数にして別ファイルにまとめた<br>
-xserverにデプロイした
+カレンダー完成。xserverにデプロイした
