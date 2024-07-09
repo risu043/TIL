@@ -44,3 +44,7 @@ handleEventDrop関数に加えhandleEventResize関数を用意する(ルーテ�
 ## 8日
 
 カレンダー完成。xserverにデプロイした
+
+## 9日
+
+tone.jsのドキュメント
