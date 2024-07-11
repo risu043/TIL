@@ -48,3 +48,11 @@ handleEventDrop関数に加えhandleEventResize関数を用意する(ルーテ�
 ## 9日
 
 tone.jsのドキュメント
+
+## 10日
+
+react-piano作成、デプロイ
+
+## 11日
+
+react-pianoのCSS修正、safari崩れを解消
