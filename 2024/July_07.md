@@ -56,3 +56,7 @@ react-piano作成、デプロイ
 ## 11日
 
 react-pianoのCSS修正、safari崩れを解消
+
+## 12日
+
+next.jsはじめる
