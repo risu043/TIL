@@ -60,3 +60,10 @@ react-pianoのCSS修正、safari崩れを解消
 ## 12日
 
 next.jsはじめる
+
+## 13日
+
+```
+<Link href={`/blogs/${blog.id}`}>
+```
+blogsフォルダ内に[bogId]フォルダを作成し、さらにpage.tsxを作成する
