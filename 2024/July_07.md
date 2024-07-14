@@ -67,3 +67,12 @@ next.jsはじめる
 <Link href={`/blogs/${blog.id}`}>
 ```
 blogsフォルダ内に[bogId]フォルダを作成し、さらにpage.tsxを作成する
+
+## 14日
+
+```
+const data = await getList({
+    filters: `category[equals]${categoryId}`,
+  });
+```
+category別しぼりこみ機能。fetch時にフィルタリングする
