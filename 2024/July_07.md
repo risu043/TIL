@@ -79,8 +79,9 @@ category別しぼりこみ機能。fetch時にフィルタリングする
 
 ## 15日
 
-今いるページのページネーションにクラス名curruntを付与する
-親コンポーネントから今いるページのidをpropsとして渡し、map関数内で比較する
+今いるページのページネーションにクラス名curruntを付与する<br>
+親コンポーネント（ページネーションリンク先ページ）から今いるページのidをpropsとして渡し、map関数内で比較する<br>
+idの初期値は1としておく
 ```
 {range(1, Math.ceil(totalCount / PER_PAGE)).map((number) => (
         <li key={number}>
