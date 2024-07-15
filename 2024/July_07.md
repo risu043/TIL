@@ -59,7 +59,7 @@ react-pianoのCSS修正、safari崩れを解消
 
 ## 12日
 
-next.jsはじめる
+next.js、microCMSでブログをつくろう
 
 ## 13日
 
@@ -76,3 +76,7 @@ const data = await getList({
   });
 ```
 category別しぼりこみ機能。fetch時にフィルタリングする
+
+## 15日
+
+ページネーション
