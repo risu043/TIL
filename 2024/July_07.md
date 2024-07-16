@@ -100,3 +100,19 @@ idの初期値は1としておく
         </li>
       ))}
 ```
+
+## 16日
+
+リッチエディタで入力させたコードブロックを表示させる<br>
+ライブラリとその型をインストール
+```
+npm install cheerio highlight.js
+npm install --save-dev @types/cheerio
+```
+
+formatRichText関数を作る
+- 引数として受け取ったHTMLをCheerioライブラリを使ってロード
+- HTML内のすべてのcodeブロックを見つけ、highlight.jsライブラリを用いてハイライト処理
+- ハイライトされたHTML全体を返す
+  
+記事ページのcontent部分に上記関数を使用する
