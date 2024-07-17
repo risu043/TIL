@@ -116,3 +116,8 @@ formatRichText関数を作る
 - ハイライトされたHTML全体を返す
   
 記事ページのcontent部分に上記関数を使用する
+
+## 17日
+
+vercelのアカウント作成、ブログをデプロイ<br>
+.envに書いてたSERVICE_DOMAINとAPI_KEYはsettingのEnvironment Variablesに入力する
