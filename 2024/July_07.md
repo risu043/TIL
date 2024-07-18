@@ -121,3 +121,7 @@ formatRichText関数を作る
 
 vercelのアカウント作成、ブログをデプロイ<br>
 .envに書いてたSERVICE_DOMAINとAPI_KEYはsettingのEnvironment Variablesに入力する
+
+## 18日
+
+ビルドエラーの解消
