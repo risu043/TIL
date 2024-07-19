@@ -125,3 +125,19 @@ vercelのアカウント作成、ブログをデプロイ<br>
 ## 18日
 
 ビルドエラーの解消
+
+## 19日
+
+next-themesのインストール<br>
+ThemeProviderコンポーネントを作成し、アプリケーション全体を正しくラップする（Layout.tsxのbodyの中身ぜんぶ）<br>
+cssはglobalcssに以下のように記述
+```
+html[data-theme='light'] {
+  background-color: black;
+  color: white;
+}
+html[data-theme='dark'] {
+  background-color: white;
+  color: black;
+}
+```
