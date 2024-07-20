@@ -141,3 +141,8 @@ html[data-theme='dark'] {
   color: black;
 }
 ```
+
+## 20日
+
+input type="checkbox"を使ってテーマを切り替えるコンポーネントを作成<br>
+アニメーションするボタンはinputの疑似要素にtransitionを指定して作る
