@@ -146,3 +146,7 @@ html[data-theme='dark'] {
 
 input type="checkbox"を使ってテーマを切り替えるコンポーネントを作成<br>
 アニメーションするボタンはinputの疑似要素にtransitionを指定して作る
+
+## 21日
+
+preタグにwidthとoverflow-x:autoを設定して、画面幅からはみ出ないようにした
