@@ -149,4 +149,6 @@ input type="checkbox"を使ってテーマを切り替えるコンポーネン�
 
 ## 21日
 
-preタグにwidthとoverflow-x:autoを設定して、画面幅からはみ出ないようにした
+preタグにwidthとoverflow-x:autoを設定して、画面幅からはみ出ないようにした<br>
+layout.tsxに設置していたOGPをはずし各page.tsxに設置<br>
+ブログ詳細ページのOGPにはfetchで取得したデータを入れて動的にした
