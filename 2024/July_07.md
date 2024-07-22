@@ -152,3 +152,8 @@ input type="checkbox"を使ってテーマを切り替えるコンポーネン�
 preタグにwidthとoverflow-x:autoを設定して、画面幅からはみ出ないようにした<br>
 layout.tsxに設置していたOGPをはずし各page.tsxに設置<br>
 ブログ詳細ページのOGPにはfetchで取得したデータを入れて動的にした
+
+## 22日
+
+クライアントコンポーネントでfetchするとエラーになる<br>
+サーバーコンポーネントでfetchし、propsとして各コンポーネントに渡す
