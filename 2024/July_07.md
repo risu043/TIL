@@ -157,3 +157,10 @@ layout.tsxに設置していたOGPをはずし各page.tsxに設置<br>
 
 クライアントコンポーネントでfetchするとエラーになる<br>
 サーバーコンポーネントでfetchし、propsとして各コンポーネントに渡す
+
+## 23日
+
+検索機能実装<br>
+検索バーのクライアントコンポーネントにてuseSearchParamsを使って検索ワードを取得<br>
+useRouterを使ってsearchParamsを含むURLへと遷移させる<br>
+検索バーコンポーネントは必ずsuspenseでラップする
