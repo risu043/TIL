@@ -163,4 +163,5 @@ layout.tsxに設置していたOGPをはずし各page.tsxに設置<br>
 検索機能実装<br>
 検索バーのクライアントコンポーネントにてuseSearchParamsを使って検索ワードを取得<br>
 useRouterを使ってsearchParamsを含むURLへと遷移させる<br>
+遷移先のページにて、searchParamsを用いて必要なデータをfilteringしながらfetchする<br>
 検索バーコンポーネントは必ずsuspenseでラップする
