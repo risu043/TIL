@@ -172,6 +172,10 @@ useRouterを使ってsearchParamsを含むURLへと遷移させる<br>
 xのサポートページから実装用のコードを取得<br>
 fetchで取得したデータを格納すると動的にできる
 
+priority={true}<br>
+ページ上部に位置する画像(Largest Contentful Paint)に設定する<br>
+画像の読み込みの優先度を明し、next/imageパフォーマンスを向上させるため
+
 ## 26日
 
 heperformでお問い合わせフォームをつくろう
