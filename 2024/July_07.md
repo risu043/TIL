@@ -165,3 +165,13 @@ layout.tsxに設置していたOGPをはずし各page.tsxに設置<br>
 useRouterを使ってsearchParamsを含むURLへと遷移させる<br>
 遷移先のページにて、searchParamsを用いて必要なデータをfilteringしながらfetchする<br>
 検索バーコンポーネントは必ずsuspenseでラップする
+
+## 24日
+
+シェアボタン実装<br>
+xのサポートページから実装用のコードを取得<br>
+fetchで取得したデータを格納すると動的にできる
+
+## 26日
+
+heperformでお問い合わせフォームをつくろう
