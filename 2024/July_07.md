@@ -184,3 +184,36 @@ heperformでお問い合わせフォームをつくろう
 
 react hook form クライアントサイドで動作するライブラリ<br>
 page.tsxではなくcomponentでインポートする
+
+React Hook Form は、ref を使用してフォームの入力要素の現在の値を収集する<br>
+inputをコンポーネントにする時はReact.forwardRef を使用して定義する必要がある<br>
+React.forwardRef を使用する場合、ref の型を適切に定義する
+```
+'use client';
+
+import { InputHTMLAttributes, forwardRef } from 'react';
+
+export default forwardRef<
+  HTMLInputElement,
+  InputHTMLAttributes<HTMLInputElement>
+>(function TextInput(
+  {
+    type = '',
+    className = '',
+    ...props
+  }: InputHTMLAttributes<HTMLInputElement>,
+  ref
+) {
+  return (
+    <input
+      {...props}
+      type={type}
+      className={
+        'w-full p-2 border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm ' +
+        className
+      }
+      ref={ref}
+    />
+  );
+});
+```
