@@ -179,3 +179,8 @@ priority={true}<br>
 ## 26日
 
 heperformでお問い合わせフォームをつくろう
+
+## 27日
+
+react hook form クライアントサイドで動作するライブラリ<br>
+page.tsxではなくcomponentでインポートする
