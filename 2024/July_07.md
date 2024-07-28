@@ -217,3 +217,10 @@ export default forwardRef<
   );
 });
 ```
+
+## 28日
+
+デバッグの記録<br>
+corsエラー：next.config.mjsにlocalhostからのリクエストを許可するよう追記<br>
+404エラー：apiディレクトリ内のスペルミス<br>
+405エラー：api/post/route.ts内の関数をexport async function POSTにする
