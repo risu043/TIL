@@ -178,7 +178,7 @@ priority={true}<br>
 
 ## 26日
 
-heperformでお問い合わせフォームをつくろう
+hyperformでお問い合わせフォームをつくろう
 
 ## 27日
 
