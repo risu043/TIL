@@ -223,4 +223,7 @@ export default forwardRef<
 デバッグの記録<br>
 corsエラー：next.config.mjsにlocalhostからのリクエストを許可するよう追記<br>
 404エラー：apiディレクトリ内のスペルミス<br>
-405エラー：api/post/route.ts内の関数をexport async function POSTにする
+405エラー：api/post/route.ts内の関数をexport async function POSTにする<br>
+505エラー：fetch先の記述ミス。formのaction属性で送信するときとAPIで送信する時でエンドポイントが異なる
+- フォーム https://hyperform.jp/api/{your-form-id}
+- API https://hyperform.jp/api/async/{your-form-id}/complete
