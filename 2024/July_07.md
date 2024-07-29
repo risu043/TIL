@@ -227,3 +227,36 @@ corsエラー：next.config.mjsにlocalhostからのリクエストを許可す�
 505エラー：fetch先の記述ミス。formのaction属性で送信するときとAPIで送信する時でエンドポイントが異なる
 - フォーム https://hyperform.jp/api/{your-form-id}
 - API https://hyperform.jp/api/async/{your-form-id}/complete
+
+## 29日
+
+react-hot-toast<br>
+フラッシュメッセージを簡易に実装できるライブラリ
+
+fetchが失敗した時にエラーメッセージを表示させたい<br>
+fetchのresponseをチェックしてからtoast.successを実行する<br>
+response.ok がfalseのときに明示的にエラーをスローしなければ、エラーハンドリングが実行されない<br>
+つまりtry & catchのcatchブロックを実行するにはエラーのスローが必要
+```
+const onSubmit: SubmitHandler<Inputs> = async (data) => {
+    try {
+      const response = await fetch('/api/postpost', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        toast.success('送信が完了いたしました！');
+        reset();
+      } else {
+        throw new Error('送信時にエラーが発生しました');
+      }
+    } catch (error) {
+      toast.error('送信時にエラーが発生しました');
+      console.log('error', error);
+    }
+  };
+```
