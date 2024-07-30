@@ -260,3 +260,16 @@ const onSubmit: SubmitHandler<Inputs> = async (data) => {
     }
   };
 ```
+## 30日
+
+Error: Invalid header found<br>
+無効なヘッダーに起因するビルドエラー<br>
+アプリケーションの設定や依存関係に問題がある場合に発生<br>
+node_modules、package-lock.jsonをはずしnpm installで解消
+
+microCMSのブログの特定の記事のみvercelでビルドエラーが生じる<br>
+SyntaxError: Invalid regular expression: /\0[oO](([0-7]_*)+)\/mu: Invalid escape<br>
+ログには正規表現の無効なエスケープシーケンスに起因するエラーと表示される
+
+microCMSでは未入力のフィールドを含む記事においてビルドエラーが生じる？<br>
+記事内のコードブロックのファイル名、言語のフィールドを全て埋めるた後、リデプロイが成功した
