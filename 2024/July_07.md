@@ -273,3 +273,7 @@ SyntaxError: Invalid regular expression: /\0[oO](([0-7]_*)+)\/mu: Invalid esca
 
 microCMSでは未入力のフィールドを含む記事においてビルドエラーが生じる？<br>
 記事内のコードブロックのファイル名、言語のフィールドを全て埋めるた後、リデプロイが成功した
+
+## 31日
+
+APIをつくろう
