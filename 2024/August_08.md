@@ -5,7 +5,7 @@ expressルーティングの復習
 
 ## 2日
 
-prosmaの使い方確認
+prismaの使い方確認
 
 ## 3日
 
@@ -29,3 +29,6 @@ POSTするAPI実装<br>
 ```
 curl -X POST -H "Content-Type: application/json" -d '[]' http://localhost:8000/api/pass
 ```
+## 5日
+
+express-validatorの使い方確認
