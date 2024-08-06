@@ -32,3 +32,8 @@ curl -X POST -H "Content-Type: application/json" -d '[]' http://localhost:8000/a
 ## 5日
 
 express-validatorの使い方確認
+
+## 6日
+
+他のGETするAPI実装<br>
+validationの順番やparamsの型がテストの判定に関わるらしい
