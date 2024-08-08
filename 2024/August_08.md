@@ -37,3 +37,17 @@ express-validatorの使い方確認
 
 他のGETするAPI実装<br>
 validationの順番やparamsの型がテストの判定に関わるらしい
+
+## 7日
+
+ブログの機能追加
+
+## 8日
+
+Tanstack Query ... ReactでDBからデータを取得する時の非同期の状態を管理できるライブラリ
+
+useQuery 子コンポーネントでGETリクエストする<br>
+QueryClient キャッシュを管理する<br>
+QueryClientProvider 親コンポ－ントにて子要素のコンポーネントと QueryClient を接続する<br>
+useMutation 子コンポーネントでPOSTリクエストする<br>
+invalidateQueries 指定したクエリのキャッシュを無効化する。データ取得時にqueryClientと組み合わせて実行すると再レンダリングされる
