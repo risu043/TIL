@@ -51,3 +51,9 @@ QueryClient キャッシュを管理する<br>
 QueryClientProvider 親コンポ－ントにて子要素のコンポーネントと QueryClient を接続する<br>
 useMutation 子コンポーネントでPOSTリクエストする<br>
 invalidateQueries 指定したクエリのキャッシュを無効化する。データ取得時にqueryClientと組み合わせて実行すると再レンダリングされる
+
+## 9日
+
+createContextでプロバイダーを作る<br>
+プロバーダーでラップしたコンポーネント内ではuseContextが使用できる<br>
+next.jsのthemeProviderに似てる
