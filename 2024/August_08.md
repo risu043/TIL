@@ -64,3 +64,29 @@ react suspense ... コンポーネントのレンダリング時にデータ取�
 三項演算子との違い ... コンポーネントからローディングに関わる状態管理が分離されるため、よりシンプルにコンポーネントを記述できる
 
 react error boundary ... エラー時のUIを表示する。suspenseと組み合わせて使用する
+
+## 15日
+
+node.jsのversionを変更する<br>
+https://github.com/nvm-sh/nvm#installing-and-updating<br>
+nvmを使ってnodeを任意のversionに指定できる。下記コマンドでインストールする
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+```
+~/.bashrc に下記コードが追加されていることを確認する
+```
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+```
+下記コマンドで上記コードを反映させる
+```
+source ~/.bashrc
+```
+nodeの最新版をインストールする時
+```
+nvm install node
+```
+versionを指定するしてインストールする時
+```
+nvm install 18.17.0
+```
