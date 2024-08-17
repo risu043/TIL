@@ -90,3 +90,16 @@ versionを指定するしてインストールする時
 ```
 nvm install 18.17.0
 ```
+## 16日
+
+先週作ったAPIのフロントを実装しよう
+
+## 17日
+
+typescript コンポーネントに数値を渡したい。数値のみでは渡せないので、プロパティを持つオブジェクトとして渡す
+```
+<QuantityInput productId={product.id} />
+...
+function QuantityInput({productId}: {productId: number}): JSX.Element {
+...
+```
