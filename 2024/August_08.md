@@ -103,3 +103,9 @@ typescript コンポーネントに数値を渡したい。数値のみでは渡
 function QuantityInput({productId}: {productId: number}): JSX.Element {
 ...
 ```
+## 18日
+オブジェクトのキーのみを取り出し、カンマでつなげて文字列にする
+```
+const cart: { [key: number]: number } = { 1: 3, 2: 4, 3: 1 };
+const productId = Object.keys(cart).join(",");
+```
