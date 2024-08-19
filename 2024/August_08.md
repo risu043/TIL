@@ -110,7 +110,7 @@ const cart: { [key: number]: number } = { 1: 3, 2: 4, 3: 1 };
 const productId = Object.keys(cart).join(",");
 ```
 ## 19日
-reduce関数<br>
+#### reduce関数
 配列のメソッドで、配列の要素を累積的に処理し、単一の値を返す
 ```
 const totalPrice = products.reduce(
@@ -137,3 +137,16 @@ const totalQuantity = Object.values(cart).reduce((a, b) => a + b, 0);
 - 例えば、cart = {1: 2, 2: 1, 3: 3} の場合、[2, 1, 3] という配列が生成されます。
 - (a, b) => a + b は累積関数で、現在の合計 a に次の値 b を加えています。
 - 0 は初期値で、合計の開始値を0に設定しています。
+
+#### オブジェクトを配列に変換する方法
+```
+const orders = Object.entries(cart).map(([key, value]) => ({
+  productId: Number(key),  // keyは文字列として扱われるため、数値に変換
+  quantity: value
+}));
+```
+- Object.entries(cart): cart オブジェクトの各エントリー（キーと値のペア）を配列として取得します。例えば、{1: 5, 19: 5} というオブジェクトは、[[1, 5], [19, 5]] という配列に変換されます。
+
+- map(([key, value]) => ({ ... })): map メソッドで配列をループし、それぞれのキーと値のペア（key, value）から新しいオブジェクト { productId, quantity } を作成します。
+
+- Number(key): キーは元々文字列として扱われるため、数値に変換します。
