@@ -109,3 +109,31 @@ function QuantityInput({productId}: {productId: number}): JSX.Element {
 const cart: { [key: number]: number } = { 1: 3, 2: 4, 3: 1 };
 const productId = Object.keys(cart).join(",");
 ```
+## 19日
+reduce関数<br>
+配列のメソッドで、配列の要素を累積的に処理し、単一の値を返す
+```
+const totalPrice = products.reduce(
+  (sum, product) => sum + (cart[product.id] || 0) * product.price,
+  0
+);
+```
+- 第一引数は累積関数です: (sum, product) => ...
+
+- sum: 累積値（この場合は合計金額）
+- product: 現在処理中の商品オブジェクト
+
+- 累積関数の中身: sum + (cart[product.id] || 0) * product.price
+- cart[product.id]: カート内のその商品の数量を取得
+- || 0: カート内にその商品がない場合（undefined）は0とする
+- * product.price: 数量に商品の価格を掛ける
+- sum + ...: 前の合計に今の商品の小計を加える
+- 0: これはreduceの第二引数で、累積の初期値を0に設定しています。
+```
+const totalQuantity = Object.values(cart).reduce((a, b) => a + b, 0);
+```
+- Object.values() は、オブジェクトの値だけを取り出して配列にするメソッドです。
+- ここでは、cart オブジェクトの全ての値（各商品の数量）を配列にしています。
+- 例えば、cart = {1: 2, 2: 1, 3: 3} の場合、[2, 1, 3] という配列が生成されます。
+- (a, b) => a + b は累積関数で、現在の合計 a に次の値 b を加えています。
+- 0 は初期値で、合計の開始値を0に設定しています。
