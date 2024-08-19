@@ -150,3 +150,25 @@ const orders = Object.entries(cart).map(([key, value]) => ({
 - map(([key, value]) => ({ ... })): map メソッドで配列をループし、それぞれのキーと値のペア（key, value）から新しいオブジェクト { productId, quantity } を作成します。
 
 - Number(key): キーは元々文字列として扱われるため、数値に変換します。
+## 20日
+typescript map関数を使用したいのに"プロパティmapは存在しません"のエラーが出る<br>
+型の定義で配列を指定し忘れている時に出るエラー<br>
+以下のようにArray<>を用いて配列であることを示す
+```
+export type Order = {
+  id: number; // 注文 ID
+  userId: number; // ユーザー ID
+  createdAt: string; // 注文の作成日時
+  updatedAt: string; // 注文の更新日時
+  orderDetails: Array<{
+    id: number; // 注文詳細 ID
+    productId: number; // 商品 ID
+    orderId: number; // 注文 ID
+    price: number; // 注文時の商品の価格
+    quantity: number; // 注文した商品の数量
+    createdAt: string; // 注文詳細の作成日時
+    updatedAt: string; // 注文詳細の更新日時
+    product: Product;
+  }>;
+};
+```
