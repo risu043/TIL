@@ -172,3 +172,13 @@ export type Order = {
   }>;
 };
 ```
+
+#### 配列の個数による条件分岐
+```
+selectedOrder.length === 0
+```
+null や undefined には length プロパティがないので、selectedOrderがnull・undefinedの場合はエラーがおこる
+lengthをもちいて条件分岐する時は、下記のようにnullまたはundefinedでないかチェックする<br>
+```
+selectedOrder && selectedOrder.length === 0
+```
