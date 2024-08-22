@@ -182,3 +182,20 @@ lengthをもちいて条件分岐する時は、下記のようにnullまたはu
 ```
 selectedOrder && selectedOrder.length === 0
 ```
+
+## 21日
+フィルタリング沼
+
+## 22日
+```
+export function OrderAllList({orders, year}: {year: string; orders: Order[]}) {
+  const targetYear = year;
+
+  const selectedOrder = orders.filter(order =>
+    order.createdAt.includes(targetYear),
+  );
+}
+```
+上記では2024/1/1が2023でフィルタリングされる<br>
+年を厳密にチェックするのではなく、サブ文字列として年が出現するかどうかをチェックするため、フィルタリングが不正確<br>
+new Date(order.createdAt).getFullYear()　文字列から年数部分を正確に抽出してから比較する必要がある
