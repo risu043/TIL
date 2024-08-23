@@ -199,3 +199,9 @@ export function OrderAllList({orders, year}: {year: string; orders: Order[]}) {
 上記では2024/1/1が2023でフィルタリングされる<br>
 年を厳密にチェックするのではなく、サブ文字列として年が出現するかどうかをチェックするため、フィルタリングが不正確<br>
 new Date(order.createdAt).getFullYear()　文字列から年数部分を正確に抽出してから比較する必要がある
+
+## 23日
+pokeAPIで作った検索機能がポンコツな理由を考える
+- useSerchParamsを使用せずstateでクエリを管理している
+- 全ポケモンの翻訳用データをページロードの旅ににリクエストしている。jsonファイルにしてローカルで管理するべき
+- リクエストに含まれるクエリをもとにフィルタリングしてデータを返すようなエンドポイントがpokeAPIに存在しない
